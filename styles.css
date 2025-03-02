@@ -246,6 +246,7 @@ transform: translateY(8px) rotate(45deg);
       font-style: normal;
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
+      
 
       
   }
@@ -266,7 +267,10 @@ transform: translateY(8px) rotate(45deg);
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif; font-size: 18px; line-height: 1.6; color: #333;
 }
+
+
 
 .clickable:hover {
     background: linear-gradient(135deg, #d40a0a, var(--black)); /* Reverse gradient on hover */
@@ -360,6 +364,7 @@ transform: translateY(8px) rotate(45deg);
     justify-content: center;
     align-items: center;
     gap: 20px;
+   
 
 
         
@@ -375,6 +380,7 @@ transform: translateY(8px) rotate(45deg);
     margin-bottom: 3rem;
     font-size: clamp(1rem,3vw,1.5rem);
     padding: 1rem;
+    
    }
 
    .membership__wrapper {
@@ -398,6 +404,7 @@ transform: translateY(8px) rotate(45deg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 
    
 
@@ -411,7 +418,7 @@ transform: translateY(8px) rotate(45deg);
    .membership__perks {
     min-height: 150px;
     font-family: 'Poppins', sans-serif; font-size: 18px; line-height: 1.6; color: #333; 
-
+         
    }
 
    .membership__card p{
@@ -448,6 +455,7 @@ transform: translateY(8px) rotate(45deg);
    }
 
    /* Team Section */
+
    .team {
     padding: 8rem calc((100vw - 1100px)/2);
     background: var(--white)
@@ -495,7 +503,7 @@ transform: translateY(8px) rotate(45deg);
 background: var(--white);
 margin-left: 9rem;
    }
-@media screen and (max-width: 768px) {
+   @media screen and (max-width: 768px) {
     .team__text h1 {
       margin-bottom: 1rem;
       font-size: 3rem;
@@ -503,6 +511,8 @@ margin-left: 9rem;
   margin-left: 1rem;
     }
    }
+
+
 
 
 
@@ -801,7 +811,6 @@ color: var(--red);
 html {
   scroll-behavior: smooth;
 }
-
 
 
 
