@@ -10,17 +10,12 @@ const mobileMenu = () => {
     menuLinks.classList.toggle('active');
 
     if (menuLinks.classList.contains('active')) {
-        body.classList.add('active'); // Disable scrolling when menu is open
-
-        // Ensure menu is visible before animation
-        setTimeout(() => {
-            gsap.from(".navbar__menu a", { opacity: 0, y: -10, duration: 0.5, stagger: 0.1 });
-        }, 50); // Small delay to let CSS changes apply
-
-    } else {
-        body.classList.remove('active'); // Enable scrolling when menu is closed
+        gsap.from(".navbar__menu a", { opacity: 0, y: -10, duration: 0.5, stagger: 0.1 });
     }
 };
+
+
+menu.addEventListener('click', mobileMenu);
 
 
 
