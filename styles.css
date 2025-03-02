@@ -430,6 +430,7 @@ transform: translateY(8px) rotate(45deg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+        margin-left: 1rem;
     
 
    
