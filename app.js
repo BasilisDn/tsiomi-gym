@@ -21,6 +21,31 @@ menu.addEventListener('click', mobileMenu);
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const items = document.querySelectorAll(".clickable");
+
+    items.forEach(item => {
+        item.addEventListener("click", function () {
+            const target = this.getAttribute("data-target");
+            
+            // Scroll to the section smoothly
+            const section = document.getElementById(target);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -93,28 +118,15 @@ document.querySelectorAll('.btn').forEach(button => {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const emailForm = document.getElementById("emailForm");
 
-    if (emailForm) {
-        emailForm.addEventListener("submit", async function (event) {
-            event.preventDefault();
-            const email = document.getElementById("email").value;
 
-            const response = await fetch("http://localhost:3000/subscribe", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ email })
-            });
 
-            const result = await response.json();
-            const messageElement = document.getElementById("message");
-            if (messageElement) {
-                messageElement.innerText = result.message;
-            }
-        });
-    }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    gsap.from("body", { opacity: 0, duration: 1 });
 });
+
 
 
 
