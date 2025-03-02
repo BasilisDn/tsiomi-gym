@@ -285,6 +285,32 @@ transform: translateY(8px) rotate(45deg);
 
 
 
+/* Βεβαιώσου ότι τα κουμπιά έχουν πάντα άσπρο κείμενο */
+.button, .clickable {
+    color: white !important;  /* Εξασφαλίζει ότι παραμένει λευκό */
+    text-decoration: none;  /* Αφαιρεί υπογραμμίσεις αν υπάρχουν */
+}
+
+/* Αν το κουμπί είναι σύνδεσμος, αποτρέπει αλλαγές όταν είναι επισκέψιμο */
+.button:visited, .clickable:visited {
+    color: white !important;
+}
+
+/* Όταν το κουμπί πατιέται ή εστιάζεται, διατηρείται το λευκό */
+.button:active, .clickable:active, 
+.button:focus, .clickable:focus {
+    color: white !important;
+    outline: none; /* Αφαιρεί το default highlight */
+}
+
+/* Αν υπάρχει hover, βεβαιώσου ότι δεν γίνεται γκρι */
+.button:hover, .clickable:hover {
+    color: white !important;
+}
+
+
+
+
 
 
 
