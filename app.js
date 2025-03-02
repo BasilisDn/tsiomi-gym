@@ -8,11 +8,19 @@ const body = document.querySelector('body');
 const mobileMenu = () => {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
-    body.classList.toggle('active');
 
-}
+    if (menuLinks.classList.contains('active')) {
+        body.classList.add('active'); // Disable scrolling when menu is open
 
-menu.addEventListener('click', mobileMenu);
+        // Ensure menu is visible before animation
+        setTimeout(() => {
+            gsap.from(".navbar__menu a", { opacity: 0, y: -10, duration: 0.5, stagger: 0.1 });
+        }, 50); // Small delay to let CSS changes apply
+
+    } else {
+        body.classList.remove('active'); // Enable scrolling when menu is closed
+    }
+};
 
 
 
