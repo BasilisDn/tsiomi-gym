@@ -234,11 +234,15 @@ transform: translateY(8px) rotate(45deg);
   }
   .text {
 
- 
-  padding: 30px;
-  border-radius: 15px;
-  max-width: 800px;
-  margin: auto;
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* έντονο κείμενο */
+    font-size: 28px;
+    color: black;
+    line-height: 2.2;
+    white-space: pre-line; 
   }
   .services {
     background-color: white; 
@@ -724,6 +728,7 @@ color: var(--red);
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
