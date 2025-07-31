@@ -234,11 +234,11 @@ transform: translateY(8px) rotate(45deg);
   }
   .text {
 
-    font-size: 2.4rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-    margin-top: 100px;
-      font-style: italic;
-      font-family: "Comic Sans MS", cursive;
+ 
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: auto;
   }
   .services {
     background-color: white; 
